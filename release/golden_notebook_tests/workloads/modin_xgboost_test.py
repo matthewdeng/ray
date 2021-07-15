@@ -18,6 +18,13 @@ def main():
 
     colnames = ["label"] + ["feature-%02d" % i for i in range(1, 29)]
 
+    import s3fs
+    fs = s3fs.S3FileSystem(anon=False)
+    print("DEBUG EXISTS", fs.exists(SIMPLE_HIGGS_S3_URI))
+
+    fs = s3fs.S3FileSystem(anon=True)
+    print("ANON DEBUG EXISTS", fs.exists(SIMPLE_HIGGS_S3_URI))
+
     if args.smoke_test:
         data = pd.read_csv(SIMPLE_HIGGS_S3_URI, names=colnames)
     else:
