@@ -113,8 +113,76 @@ parts:
             title: "Getting Started"
           - file: train/key-concepts
             title: "Key Concepts"
-          - file: train/user-guides
+          - file: train/user-guides-new
             title: "User Guides"
+            sections:
+              - file: train/torch/welcome
+                title: "PyTorch"
+                sections:
+                  - file: train/torch/quickstart
+                    title: "Getting Started"
+                  - file: train/torch/basics
+                    title: "Basics"
+                  - file: train/torch/advanced
+                    title: "Advanced"
+              - file: train/lightning/welcome
+                title: "Lightning"
+                sections:
+                  - file: train/lightning/quickstart
+                    title: "Getting Started"
+                  - file: train/lightning/basics
+                    title: "Basics"
+                  - file: train/lightning/advanced
+                    title: "Advanced"
+              - file: train/huggingface/transformers/welcome
+                title: "HuggingFace Transformers"
+                sections:
+                  - file: train/huggingface/transformers/quickstart
+                    title: "Getting Started"
+                  - file: train/huggingface/transformers/basics
+                    title: "Basics"
+                  - file: train/huggingface/transformers/advanced
+                    title: "Advanced"
+              - file: train/tensorflow/welcome
+                title: "TensorFlow"
+                sections:
+                  - file: train/tensorflow/quickstart
+                    title: "Getting Started"
+                  - file: train/tensorflow/basics
+                    title: "Basics"
+                  - file: train/tensorflow/advanced
+                    title: "Advanced"
+              - file: train/gbdt/welcome
+                title: "XGBoost & LightGBM"
+                sections:
+                  - file: train/gbdt/quickstart
+                    title: "Getting Started"
+                  - file: train/gbdt/basics
+                    title: "Basics"
+                  - file: train/gbdt/advanced
+                    title: "Advanced"
+              
+              - file: train/other/welcome
+                title: "Other training frameworks"
+                sections:
+                  - file: train/horovod/welcome
+                    title: "Horovod"
+                  - file: train/huggingface/accelerate/welcome
+                    title: "HuggingFace Accelerate"
+                  - file: train/mosaic/welcome
+                    title: "MosaicML"
+                  - file: train/rllib/welcome
+                    title: "RLlib"
+                  - file: train/sklearn/welcome
+                    title: "scikit-learn"
+              - file: train/tune
+                title: "Hyperparameter tuning with Ray Tune"
+              - file: train/storage
+                title: "Configuring storage options"
+              - file: train/results
+                title: "Accessing results and trained models"
+          - file: train/user-guides
+            title: "User Guides (Old)" # REMOVE THIS
             sections:
               - file: train/config_guide
                 title: "Configuring Ray Train"
