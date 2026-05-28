@@ -31,8 +31,9 @@ def enable_profiling():
     reason="Fails on OSX: https://github.com/ray-project/ray/issues/30114",
 )
 @pytest.mark.parametrize("native", ["0", "1"])
+@pytest.mark.parametrize("idle", ["0", "1"])
 @pytest.mark.parametrize("node_info", ["node_id", "ip"])
-def test_profiler_endpoints(ray_start_with_dashboard, native, node_info):
+def test_profiler_endpoints(ray_start_with_dashboard, native, idle, node_info):
     if native == "1" and sys.platform == "linux":
         pytest.skip(
             "py-spy --native 'failed to get os threadid' "
@@ -98,7 +99,8 @@ def test_profiler_endpoints(ray_start_with_dashboard, native, node_info):
 
     def get_actor_flamegraph():
         response = requests.get(
-            f"{webui_url}/worker/cpu_profile?pid={pid}&{get_node_info()}&native={native}"
+            f"{webui_url}/worker/cpu_profile?pid={pid}&{get_node_info()}"
+            f"&native={native}&idle={idle}"
         )
         response.raise_for_status()
         assert response.headers["Content-Type"] == "image/svg+xml", response.headers

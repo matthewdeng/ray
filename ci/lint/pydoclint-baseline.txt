@@ -798,10 +798,7 @@ python/ray/dashboard/modules/metrics/grafana_dashboard_factory.py
 --------------------
 python/ray/dashboard/modules/reporter/profile_manager.py
     DOC111: Method `CpuProfilingManager.trace_dump`: The option `--arg-type-hints-in-docstring` is `False` but there are type hints in the docstring arg list
-    DOC101: Method `CpuProfilingManager.cpu_profile`: Docstring contains fewer arguments than in function signature.
-    DOC107: Method `CpuProfilingManager.cpu_profile`: The option `--arg-type-hints-in-signature` is `True` but not all args in the signature have type hints
     DOC111: Method `CpuProfilingManager.cpu_profile`: The option `--arg-type-hints-in-docstring` is `False` but there are type hints in the docstring arg list
-    DOC103: Method `CpuProfilingManager.cpu_profile`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [format: ].
     DOC101: Method `MemoryProfilingManager.get_profile_result`: Docstring contains fewer arguments than in function signature.
     DOC111: Method `MemoryProfilingManager.get_profile_result`: The option `--arg-type-hints-in-docstring` is `False` but there are type hints in the docstring arg list
     DOC103: Method `MemoryProfilingManager.get_profile_result`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [profiler_filename: str].
@@ -820,7 +817,7 @@ python/ray/dashboard/modules/reporter/reporter_head.py
     DOC103: Method `ReportHead.get_traceback`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [req: aiohttp.web.Request]. Arguments in the docstring but not in the function signature: [ip or node_id: , pid: ].
     DOC201: Method `ReportHead.get_traceback` does not have a return section in docstring
     DOC102: Method `ReportHead.cpu_profile`: Docstring contains more arguments than in function signature.
-    DOC103: Method `ReportHead.cpu_profile`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [req: aiohttp.web.Request]. Arguments in the docstring but not in the function signature: [duration: , format: , ip or node_id: , native: , pid: ].
+    DOC103: Method `ReportHead.cpu_profile`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [req: aiohttp.web.Request]. Arguments in the docstring but not in the function signature: [duration: , format: , idle: , ip or node_id: , native: , pid: ].
     DOC201: Method `ReportHead.cpu_profile` does not have a return section in docstring
     DOC101: Method `ReportHead.memory_profile`: Docstring contains fewer arguments than in function signature.
     DOC103: Method `ReportHead.memory_profile`: Docstring arguments are different from function arguments. (Or could be other formatting issues: https://jsh9.github.io/pydoclint/violation_codes.html#notes-on-doc103 ). Arguments in the function signature but not in the docstring: [req: aiohttp.web.Request].
