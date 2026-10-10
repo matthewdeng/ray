@@ -10,7 +10,7 @@ mujoco==3.2.4
 dm_control==1.0.12; python_version < "3.12"
 
 # For tests on PettingZoo's multi-agent envs.
-pettingzoo==1.24.3
+pettingzoo==1.27.0
 pymunk==6.2.1
 tinyscaler==1.2.8
 shimmy==2.0.0
