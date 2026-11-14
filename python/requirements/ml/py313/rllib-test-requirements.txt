@@ -5,7 +5,7 @@ pytest-asyncio
 # Environment adapters.
 # ---------------------
 # Atari
-ale_py==0.10.1
+ale_py==0.12.1
 imageio==2.34.2
 opencv-python-headless==4.10.0.84
 
